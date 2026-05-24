@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="174" height="20" role="img" aria-label="maintained by: @ReformedDoge"><title>maintained by: @ReformedDoge</title><g shape-rendering="crispEdges"><rect width="89" height="20" fill="#555"/><rect x="89" width="85" height="20" fill="gold"/></g><g fill="#fff" text-anchor="middle" font-family="Verdana,Geneva,DejaVu Sans,sans-serif" text-rendering="geometricPrecision" font-size="110"><text x="455" y="140" transform="scale(.1)" fill="#fff" textLength="790">maintained by</text><text x="1305" y="140" transform="scale(.1)" fill="#333" textLength="750">@ReformedDoge</text></g><style xmlns="" class="darkreader darkreader--fallback">html, body, body :not(iframe) {
+    background-color: var(--darkreader-background-ffffff, #181a1b) !important;
+    border-color: var(--darkreader-border-404040, #776e62) !important;
+    color: var(--darkreader-text-000000, #e8e6e3) !important;
+}
+div[style*="background-color: rgb(135, 135, 135)"] {
+    background-color: #878787 !important;
+}</style></svg>

@@ -1,0 +1,490 @@
+[
+  {
+    "command": "/error-monitor/v1/ux/logs",
+    "module": "RiotInvoke_ErrorMonitorModuleInit",
+    "description": "ErrorMonitor UX worker thread exiting.",
+    "params": [
+    ]
+  },
+  {
+    "command": "/plugin-manager/v3/plugins-manifest",
+    "module": "RiotInvoke_PluginManagerModuleInit",
+    "description": "",
+    "params": [
+    ]
+  },
+  {
+    "command": "/process-control/v1/process/quit",
+    "module": "RiotInvoke_ProcessControlModuleInit",
+    "description": "LCE-B0D04C69 Failed to send quit message because there was no connection. Terminating.",
+    "params": [
+    ]
+  },
+  {
+    "command": "/tracing/v1/performance/ux_run",
+    "module": "RiotInvoke_PerformanceTracingModuleInit",
+    "description": "",
+    "params": [
+    ]
+  },
+  {
+    "command": "/tracing/v1/trace/critical-flow",
+    "module": "RiotInvoke_TraceCriticalFlowModuleInit",
+    "description": "",
+    "params": [
+    ]
+  },
+  {
+    "command": "File.RequestDirectoryPath",
+    "module": "RiotInvoke_FileModuleInit",
+    "description": "Requests a directory path from the user, using the standard OS directory browser dialog.",
+    "params": [
+      {
+        "name": "uxId",
+        "description": "ux id"
+      },
+      {
+        "name": "initialPath",
+        "description": "path that dialog box opens to"
+      },
+      {
+        "name": "windowText",
+        "description": "text displayed in dialog on windows and as window title on MacOS"
+      },
+      {
+        "name": "okButtonText",
+        "description": "text to display in ok button"
+      }
+    ]
+  },
+  {
+    "command": "File.RequestSaveFilePath",
+    "module": "RiotInvoke_FileModuleInit",
+    "description": "Requests a save file path from the user, using the standard OS save file dialog.",
+    "params": [
+      {
+        "name": "uxId",
+        "description": "ux id"
+      },
+      {
+        "name": "defaultName",
+        "description": "default file name"
+      },
+      {
+        "name": "title",
+        "description": "title for the dialog"
+      },
+      {
+        "name": "extensions",
+        "description": "default file extensions"
+      }
+    ]
+  },
+  {
+    "command": "Mouse.SetDragBarHeight",
+    "module": "RiotInvoke_MouseModuleInit",
+    "description": "Sets the mouse drag bar height.",
+    "params": [
+      {
+        "name": "uxId",
+        "description": "ux id of the window"
+      },
+      {
+        "name": "height",
+        "description": "height of the drag bar"
+      }
+    ]
+  },
+  {
+    "command": "Mouse.SetDragEnabled",
+    "module": "RiotInvoke_MouseModuleInit",
+    "description": "Sets the ability to drag the window",
+    "params": [
+      {
+        "name": "uxId",
+        "description": "ux id of the window"
+      },
+      {
+        "name": "enabled",
+        "description": "if dragging is enabled or disabled"
+      }
+    ]
+  },
+  {
+    "command": "Mouse.SetResizeBounds",
+    "module": "RiotInvoke_MouseModuleInit",
+    "description": "Sets the resize bounds of the the window",
+    "params": [
+      {
+        "name": "uxId",
+        "description": "ux id of the window"
+      },
+      {
+        "name": "minWidth",
+        "description": "minimum width the window can be resized to"
+      },
+      {
+        "name": "minHeight",
+        "description": "minimum height the window can be resized to"
+      },
+      {
+        "name": "maxWidth",
+        "description": "maximum width the window can be resized to"
+      },
+      {
+        "name": "maxHeight",
+        "description": "maximum height the window can be resized to"
+      }
+    ]
+  },
+  {
+    "command": "Mouse.SetResizeEnabled",
+    "module": "RiotInvoke_MouseModuleInit",
+    "description": "Sets the ability to resize the window",
+    "params": [
+      {
+        "name": "uxId",
+        "description": "ux id of the window"
+      },
+      {
+        "name": "enabled",
+        "description": "if resizing is enabled or disabled"
+      }
+    ]
+  },
+  {
+    "command": "RiotClient.Copy",
+    "module": "RiotInvoke_RiotClientModuleInit",
+    "description": "Copies the currently selected text.",
+    "params": [
+      {
+        "name": "uxId",
+        "description": ""
+      }
+    ]
+  },
+  {
+    "command": "RiotClient.Exit",
+    "module": "RiotInvoke_RiotClientModuleInit",
+    "description": "Exits the application.",
+    "params": [
+      {
+        "name": "uxId",
+        "description": ""
+      }
+    ]
+  },
+  {
+    "command": "RiotClient.Paste",
+    "module": "RiotInvoke_RiotClientModuleInit",
+    "description": "Pastes the clipboard text.",
+    "params": [
+      {
+        "name": "uxId",
+        "description": ""
+      }
+    ]
+  },
+  {
+    "command": "Window.Activate",
+    "module": "RiotInvoke_WindowModuleInit",
+    "description": "Activates the ux window.",
+    "params": [
+      {
+        "name": "uxId",
+        "description": "id of the ux window"
+      }
+    ]
+  },
+  {
+    "command": "Window.AddToTaskbar",
+    "module": "RiotInvoke_WindowModuleInit",
+    "description": "Adds the ux window to the taskbar.",
+    "params": [
+      {
+        "name": "uxId",
+        "description": "id of the ux window"
+      }
+    ]
+  },
+  {
+    "command": "Window.ApplyMask",
+    "module": "RiotInvoke_WindowModuleInit",
+    "description": "Applys the mask in the given image file path to the window.",
+    "params": [
+      {
+        "name": "uxId",
+        "description": "id of the ux window"
+      },
+      {
+        "name": "maskPath",
+        "description": "path to the image file that is the window mask"
+      }
+    ]
+  },
+  {
+    "command": "Window.CenterToScreen",
+    "module": "RiotInvoke_WindowModuleInit",
+    "description": "Centers the given window to the screen.",
+    "params": [
+      {
+        "name": "uxId",
+        "description": "id of the ux window"
+      }
+    ]
+  },
+  {
+    "command": "Window.CenterWithinParent",
+    "module": "RiotInvoke_WindowModuleInit",
+    "description": "Centers the given window within its parent.",
+    "params": [
+      {
+        "name": "uxId",
+        "description": "id of the ux window"
+      }
+    ]
+  },
+  {
+    "command": "Window.Flash",
+    "module": "RiotInvoke_WindowModuleInit",
+    "description": "Flashes the window and its taskbar icon",
+    "params": [
+      {
+        "name": "uxId",
+        "description": "id of the ux window"
+      }
+    ]
+  },
+  {
+    "command": "Window.GetValidWindowSizes",
+    "module": "RiotInvoke_WindowModuleInit",
+    "description": "Returns the list of valid window sizes for the ux window.",
+    "params": [
+      {
+        "name": "uxId",
+        "description": "id of the ux window"
+      }
+    ]
+  },
+  {
+    "command": "Window.Hide",
+    "module": "RiotInvoke_WindowModuleInit",
+    "description": "Hides the ux window.",
+    "params": [
+      {
+        "name": "uxId",
+        "description": "id of the ux window"
+      }
+    ]
+  },
+  {
+    "command": "Window.Minimize",
+    "module": "RiotInvoke_WindowModuleInit",
+    "description": "Minimizes the ux window.",
+    "params": [
+      {
+        "name": "uxId",
+        "description": "id of the ux window"
+      }
+    ]
+  },
+  {
+    "command": "Window.MoveBy",
+    "module": "RiotInvoke_WindowModuleInit",
+    "description": "Moves the ux window by the given amount.",
+    "params": [
+      {
+        "name": "uxId",
+        "description": "id of the ux window"
+      },
+      {
+        "name": "deltaX",
+        "description": "amount to adjust the ux window's horizontal position by"
+      },
+      {
+        "name": "deltaY",
+        "description": "amount to adjust the ux window's vertical position by"
+      }
+    ]
+  },
+  {
+    "command": "Window.MoveTo",
+    "module": "RiotInvoke_WindowModuleInit",
+    "description": "horizontal position to move the ux window to",
+    "params": [
+      {
+        "name": "uxId",
+        "description": "id of the ux window"
+      }
+    ]
+  },
+  {
+    "command": "Window.RemoveFromTaskbar",
+    "module": "RiotInvoke_WindowModuleInit",
+    "description": "Removes the ux window from the taskbar.",
+    "params": [
+      {
+        "name": "uxId",
+        "description": "id of the ux window"
+      }
+    ]
+  },
+  {
+    "command": "Window.ResizeBy",
+    "module": "RiotInvoke_WindowModuleInit",
+    "description": "Resizes the ux window by the given width and height.",
+    "params": [
+      {
+        "name": "uxId",
+        "description": "id of the ux window"
+      },
+      {
+        "name": "deltaX",
+        "description": "amount to adjust the ux window's width by"
+      },
+      {
+        "name": "deltaY",
+        "description": "amount to adjust the ux window's height by"
+      }
+    ]
+  },
+  {
+    "command": "Window.ResizeTo",
+    "module": "RiotInvoke_WindowModuleInit",
+    "description": "Resizes the ux window to the given width and height.",
+    "params": [
+      {
+        "name": "uxId",
+        "description": "id of the ux window"
+      },
+      {
+        "name": "width",
+        "description": "width to resize the ux window to"
+      },
+      {
+        "name": "height",
+        "description": "height to resize the ux window to"
+      }
+    ]
+  },
+  {
+    "command": "Window.Restore",
+    "module": "RiotInvoke_WindowModuleInit",
+    "description": "Restores the ux window.",
+    "params": [
+      {
+        "name": "uxId",
+        "description": "id of the ux window"
+      }
+    ]
+  },
+  {
+    "command": "Window.ScreenData",
+    "module": "RiotInvoke_WindowModuleInit",
+    "description": "",
+    "params": [
+      {
+        "name": "uxId",
+        "description": "id of the ux window"
+      },
+      {
+        "name": "queryId",
+        "description": "id of the persistent query"
+      }
+    ]
+  },
+  {
+    "command": "Window.SetDebugWindowFrameVisibility",
+    "module": "RiotInvoke_WindowModuleInit",
+    "description": "Sets the debug window's frame to the given visibility",
+    "params": [
+      {
+        "name": "uxId",
+        "description": "id of the ux window"
+      },
+      {
+        "name": "visible",
+        "description": "whether or not the native OS window frame should be visible"
+      }
+    ]
+  },
+  {
+    "command": "Window.SetResizeBounds",
+    "module": "RiotInvoke_WindowModuleInit",
+    "description": "Sets the resize bounds of the the window",
+    "params": [
+      {
+        "name": "uxId",
+        "description": "ux id of the window"
+      },
+      {
+        "name": "minWidth",
+        "description": "minimum width the window can be resized to, 0 = no min"
+      },
+      {
+        "name": "minHeight",
+        "description": "minimum height the window can be resized to, 0 = no min"
+      },
+      {
+        "name": "maxWidth",
+        "description": "maximum width the window can be resized to, 0 = no max"
+      },
+      {
+        "name": "maxHeight",
+        "description": "maximum height the window can be resized to, 0 = no max"
+      }
+    ]
+  },
+  {
+    "command": "Window.SetTitle",
+    "module": "RiotInvoke_WindowModuleInit",
+    "description": "Sets the ux window title to the given string.",
+    "params": [
+      {
+        "name": "uxId",
+        "description": "id of the ux window"
+      },
+      {
+        "name": "title",
+        "description": "the new title of the window"
+      }
+    ]
+  },
+  {
+    "command": "Window.Show",
+    "module": "RiotInvoke_WindowModuleInit",
+    "description": "Shows the ux window.",
+    "params": [
+      {
+        "name": "uxId",
+        "description": "id of the ux window"
+      }
+    ]
+  },
+  {
+    "command": "Window.ShowDevTools",
+    "module": "RiotInvoke_WindowModuleInit",
+    "description": "Shows dev tools for the ux window.",
+    "params": [
+      {
+        "name": "uxId",
+        "description": "id of the ux window"
+      }
+    ]
+  },
+  {
+    "command": "Window.SyncMinimize",
+    "module": "RiotInvoke_WindowModuleInit",
+    "description": "Sets the sync status if this window should minimize with the main window.",
+    "params": [
+      {
+        "name": "uxId",
+        "description": "id of the ux window"
+      },
+      {
+        "name": "enabled",
+        "description": "if window should sync minimize with the main window"
+      }
+    ]
+  }
+]
